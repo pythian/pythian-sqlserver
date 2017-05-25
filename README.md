@@ -12,4 +12,17 @@ The focus on the server reviews right now are on Windows Server and SQL Server.
 
 ## Dependencies
 
-Keeping with the mantra "don't reinvent the wheel" this module will have a dependency on [dbatools](https://github.com/sqlcollaborative/dbatools). If a process or action cannot be performed utilizing dbatools then it will be added into this module. [Which at some point if the functionality falls in line with dbatools, then a PR could be submitted for that repository to have it added.
+Keeping with the mantra "don't reinvent the wheel" this module will have dependencies on external modules. Those modules are listed below along with the version supported.
+
+If a process or action cannot be performed by the external module it will be added to the module itself. At some point if the added process fits in as a function with the external function, a PR could be submitted to that repository.
+
+### Dependency Versions
+
+| Module 	| Version |
+|------- 	| :---: |
+| [dbatools](https://github.com/sqlcollaborative/dbatools) 	| 1.0 |
+| pester 	| 2.0 |
+
+## Development
+
+This module/project is solely being developed utilizing [Microsoft Visual Studio Code](https://code.microsoft.com). You will notice a `.vscode` folder in this repository, this will be where any settings specific to this workspace in Code are kept. So if you [utilize Code and clone this repository](https://www.pythian.com/blog/visual-studio-code-and-powershell/) it will allow you to have the same configuration.
