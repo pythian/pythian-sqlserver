@@ -9,31 +9,31 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = 'pythian-sqlserver.psm1'
+    RootModule = 'pythian-sqlserver.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.1.0'
+    ModuleVersion = '0.1.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
 
 # ID used to uniquely identify this module
-GUID = 'c25a0e79-5878-4b80-87f7-d8537b38eee2'
+    GUID = 'c25a0e79-5878-4b80-87f7-d8537b38eee2'
 
 # Author of this module
-Author = 'wshaw'
+    Author = 'Shawn Melton'
 
 # Company or vendor of this module
-CompanyName = 'Unknown'
+    CompanyName = 'Pythian'
 
 # Copyright statement for this module
-Copyright = '(c) 2017 wshaw. All rights reserved.'
+    Copyright = '(c) 2017 Pythian. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+    Description = 'Module utilized by Pythian to perform server reviews.'
 
 # Minimum version of the Windows PowerShell engine required by this module
-# PowerShellVersion = ''
+    PowerShellVersion = '4.0'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
@@ -51,7 +51,10 @@ Copyright = '(c) 2017 wshaw. All rights reserved.'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-# RequiredModules = @()
+    RequiredModules = @(
+        @{ ModuleName = 'dbatools'; ModuleVersion = '0.9.318' }
+        @{ ModuleName = 'PSFramework'; ModuleVersion = '0.9.14.37' }
+    )
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
@@ -94,11 +97,12 @@ PrivateData = @{
 
     PSData = @{
 
+        Category = "Databases"
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        Tags = @('sqlserver','sql','databases','bestpractice')
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+        LicenseUri = 'https://opensource.org/licenses/MIT'
 
         # A URL to the main website for this project.
         # ProjectUri = ''
