@@ -20,8 +20,10 @@ If a process or action cannot be performed by the external module it will be add
 
 | Module 	| Version |
 |------- 	| :---: |
-| [dbatools](https://github.com/sqlcollaborative/dbatools) 	| 1.0 |
-| pester 	| 2.0 |
+| [dbatools](https://github.com/sqlcollaborative/dbatools) 	| 0.9.318 |
+| [PSFramework](https://github.com/PowershellFrameworkCollective/psframework) | 0.9.14.37 |
+| [Pester](https://github.com/pester/Pester) 	| 4.3.1 |
+| [ImportExcel](https://github.com/dfinke/ImportExcel) | 4.0.11 |
 
 ## Development
 
